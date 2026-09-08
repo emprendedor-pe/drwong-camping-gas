@@ -516,6 +516,150 @@ section{padding:70px 0}
   .product-badge{right:18px;bottom:18px}
   .order-row{align-items:flex-start}
 }
+
+/* ===== SECCIÓN COMPARATIVA BOMA ===== */
+.why-boma{
+  background:#fff;
+}
+.compare-grid{
+  display:grid;
+  gap:18px;
+  margin-top:30px;
+}
+.compare-card{
+  position:relative;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:linear-gradient(180deg,#ffffff,#f9fbfd);
+  padding:24px;
+  box-shadow:0 14px 38px rgba(7,21,43,.06);
+}
+.compare-card::after{
+  content:"";
+  position:absolute;
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  background:var(--blue-soft);
+  right:-45px;
+  top:-45px;
+  z-index:0;
+}
+.compare-icon{
+  position:relative;
+  z-index:1;
+  width:54px;
+  height:54px;
+  display:grid;
+  place-items:center;
+  border-radius:16px;
+  background:var(--ink);
+  color:#fff;
+  font-size:25px;
+  margin-bottom:18px;
+}
+.compare-card h3{
+  position:relative;
+  z-index:1;
+  margin-bottom:15px;
+  font-size:19px;
+  line-height:1.2;
+  text-transform:uppercase;
+}
+.compare-good,.compare-risk{
+  position:relative;
+  z-index:1;
+  border-radius:15px;
+  padding:14px;
+  font-size:14px;
+  line-height:1.55;
+}
+.compare-good{
+  background:#eaf9fe;
+  border:1px solid #bfeaf7;
+  margin-bottom:10px;
+}
+.compare-risk{
+  background:#fff4f0;
+  border:1px solid #ffd8ca;
+  color:#694137;
+}
+.compare-good b,.compare-risk b{
+  display:block;
+  margin-bottom:4px;
+  text-transform:uppercase;
+}
+.trust-banner{
+  margin-top:24px;
+  border-radius:24px;
+  padding:24px;
+  background:linear-gradient(135deg,var(--ink),var(--ink-2));
+  color:#fff;
+  box-shadow:var(--shadow);
+}
+.trust-banner strong{
+  display:block;
+  margin-bottom:8px;
+  color:#ffd08a;
+  font-size:18px;
+  text-transform:uppercase;
+}
+.trust-banner p{
+  margin:0;
+  color:#e4edf5;
+  line-height:1.65;
+}
+.detail-proof{
+  display:grid;
+  gap:20px;
+  align-items:center;
+  margin-top:30px;
+}
+.detail-proof figure{
+  margin:0;
+  overflow:hidden;
+  border-radius:24px;
+  border:1px solid var(--line);
+  background:#fff;
+  box-shadow:0 14px 38px rgba(7,21,43,.06);
+}
+.detail-proof img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:contain;
+  background:#fff;
+}
+.detail-copy{
+  padding:4px 0;
+}
+.detail-copy h3{
+  font-size:25px;
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+.detail-copy p{
+  color:var(--muted);
+  line-height:1.65;
+  margin-bottom:18px;
+}
+.guarantee-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:var(--orange-soft);
+  border:1px solid #ffd494;
+  border-radius:999px;
+  padding:11px 15px;
+  font-weight:950;
+  color:#774800;
+  text-transform:uppercase;
+}
+@media (min-width:760px){
+  .compare-grid{grid-template-columns:repeat(3,1fr)}
+  .detail-proof{grid-template-columns:.9fr 1.1fr}
+}
+
 </style>
 </head>
 
@@ -642,6 +786,75 @@ section{padding:70px 0}
         <figure><img src="camping.jpg" alt="Cocina portátil BOMA BM-155 en una escena de camping"></figure>
         <figure class="contain"><img src="producto-frontal.jpg" alt="Vista superior de cocina BOMA BM-155 y maletín"></figure>
         <figure class="contain"><img src="producto-detalle.jpeg" alt="Detalle de cocina BOMA BM-155"></figure>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="why-boma">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">COMPRA CON MÁS CONFIANZA</span>
+        <h2 style="margin-top:16px">¿POR QUÉ ELEGIR LA COCINA PORTÁTIL DUAL BOMA?</h2>
+        <p><strong>No todas las cocinas portátiles son iguales.</strong> La diferencia está en la construcción, el sistema de uso y el respaldo que recibes después de la compra.</p>
+      </div>
+
+      <div class="compare-grid">
+        <article class="compare-card">
+          <div class="compare-icon">🏷️</div>
+          <h3>MARCA RECONOCIDA VS. MARCAS GENÉRICAS</h3>
+          <div class="compare-good">
+            <b>CALIDAD BOMA</b>
+            Fabricada con estructura resistente y acabados metálicos pensados para un uso frecuente.
+          </div>
+          <div class="compare-risk">
+            <b>¿QUÉ PASA CON UNA GENÉRICA?</b>
+            En alternativas de baja calidad pueden encontrarse materiales más delgados, perillas frágiles y menor respaldo posventa.
+          </div>
+        </article>
+
+        <article class="compare-card">
+          <div class="compare-icon">🛡️</div>
+          <h3>SEGURIDAD EN CASA Y EN TUS SALIDAS</h3>
+          <div class="compare-good">
+            <b>SISTEMA DUAL</b>
+            BOMA puede trabajar con cartucho de gas o balón de gas y cuenta con válvula reforzada y un sistema de acople diseñado para un ajuste seguro.
+          </div>
+          <div class="compare-risk">
+            <b>EVITA PRODUCTOS SIN RESPALDO</b>
+            Un mal ajuste del cartucho o conexiones deficientes pueden convertirse en un problema cuando se trabaja con gas y fuego.
+          </div>
+        </article>
+
+        <article class="compare-card">
+          <div class="compare-icon">📝</div>
+          <h3>GARANTÍA REAL DE 6 MESES</h3>
+          <div class="compare-good">
+            <b>TU COMPRA TIENE RESPALDO</b>
+            DR. WONG IMPORTS ofrece <strong>6 meses de garantía</strong> ante defectos de fábrica.
+          </div>
+          <div class="compare-risk">
+            <b>COMPRA SIN GARANTÍA</b>
+            En ventas informales puedes terminar sin un canal claro de atención si el producto presenta una falla.
+          </div>
+        </article>
+      </div>
+
+      <div class="detail-proof">
+        <figure>
+          <img src="producto-detalle.jpeg" alt="Detalle de acabados de la cocina portátil BOMA BM-155">
+        </figure>
+        <div class="detail-copy">
+          <span class="guarantee-badge">🛡️ 6 MESES DE GARANTÍA</span>
+          <h3 style="margin-top:18px">REVISA LOS DETALLES ANTES DE ELEGIR</h3>
+          <p>Observa de cerca el acabado metálico, el quemador y los controles de la BOMA BM-155. Cuando compras una cocina portátil, no solo importa el precio: también importa el respaldo del vendedor.</p>
+          <a class="btn btn-wa" href="#pedido">🟢 QUIERO LA BOMA CON 6 MESES DE GARANTÍA</a>
+        </div>
+      </div>
+
+      <div class="trust-banner">
+        <strong>⚠️ RECUERDA: LO BARATO PUEDE SALIR CARO</strong>
+        <p>Una cocina portátil trabaja con fuego y gas. Prioriza un producto con respaldo, revisa siempre que las conexiones estén correctamente ajustadas y sigue las indicaciones de uso del fabricante. Con tu BOMA adquirida en DR. WONG IMPORTS cuentas además con 6 meses de garantía por defectos de fábrica.</p>
       </div>
     </div>
   </section>
